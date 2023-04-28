@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+<style>
+body{
+  margin: 0 auto;
+  background-color: rgb(66, 113, 200);
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+form{
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 23rem;
+}
+label{
+  width: 35%;
+  margin: 1%;
+  text-align: right;
+  font-size: 18px;
+}
+input[type="text"]{
+  width: 50%;;
+  margin: 1%;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(66, 113, 200);
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+input[type="submit"], [type="reset"]{
+  width: 30%;
+  background-color: rgb(88, 156, 156);
+  font-size: 18px;
+  padding: 1%;
+  margin: 6%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h1>INSERTAR REGISTROS PREPARADA</h1>
+
+<form action="encriptar.php" method="post" name="formulario">
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" name="nombre">
+  <label for="apellido1">Primer apellido:</label>
+  <input type="text" name="apellido1">
+  <label for="apellido2">Segundo apellido:</label>
+  <input type="text" name="apellido2">
+  <label for="usuario">Usuario:</label>
+  <input type="text" name="usuario">
+  <label for="password">Contraseña:</label>
+  <input type="text" name="password">
+
+  <input type="submit" name="submit" value="Insertar">
+  <input type="reset" name="submit" value="Borrar">
+
+
+</form>
+
+</body>
+</html>

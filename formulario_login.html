@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      body{
+        height: 100%; 
+        background-color: #e79ad5; 
+      }
+      
+      form{  
+        width: 460px; 
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;  
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        background-color: #999696; 
+        padding-left: 30px; 
+      }
+      
+      input{
+        background-color: #fbfbfb; 
+        width: 408px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #e79ad5; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      label{
+        display: block; 
+        float: center;  
+      }
+              
+      input[type="submit"],input[type="reset"]{
+        height: 45px; 
+        padding-left: 5px;
+        padding-right: 5px;   
+        margin-bottom: 20px; 
+        margin-top: 10px;   
+        text-transform: uppercase;
+        background-color: #ab4493; 
+        border-color: #ab4493; 
+        border-style: solid; 
+        border-radius: 10px;  
+        width: 420px;   
+        cursor: pointer;
+        color: #fff;
+      }
+             
+      h1{
+        font-size: 39px;  
+        text-align: center; 
+        padding-bottom: 20px; 
+        color: #5539bc;
+      }
+      img{
+        width: 350px;
+        height: 180px;
+      }
+      table{
+        margin: 0 auto;
+      }
+      
+      .formulario input:focus{
+        outline:0;
+        border: 1px solid #5539bc;
+      }
+      #cerrar{
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+      #cerrar input[type="submit"]{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+        </style>
+</head>
+<body>
+    <h1>Validar usuario</h1> 
+
+    <form action="login.php" method="post">
+        <p>
+            <label for="usuario" >Usuario </label>
+              <input type="text" class="" name="usuario"  placeholder="Escribe tu usuario">
+        </p>
+        <p>
+            <label for="password" >Contraseña </label>
+              <input type="text" name="password"  placeholder="Escribe tu contraseña">
+        </p>
+
+        
+        
+
+        <input type="submit" name="enviar" value="Validar">
+        <input type="reset" name="borrar" value="Borrar">
+    </form>
+</body>
+</html>
+
